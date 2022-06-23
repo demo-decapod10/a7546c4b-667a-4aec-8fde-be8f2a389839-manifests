@@ -1,0 +1,15 @@
+# Source: cluster-api-aws/templates/cluster.yaml
+apiVersion: cluster.x-k8s.io/v1beta1
+kind: Cluster
+metadata:
+  name: a7546c4b-667a-4aec-8fde-be8f2a389839
+  namespace: a7546c4b-667a-4aec-8fde-be8f2a389839
+spec:
+  infrastructureRef:
+    apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
+    kind: AWSCluster
+    name: a7546c4b-667a-4aec-8fde-be8f2a389839
+  controlPlaneRef:
+    kind: KubeadmControlPlane
+    apiVersion: controlplane.cluster.x-k8s.io/v1beta1
+    name: "a7546c4b-667a-4aec-8fde-be8f2a389839-control-plane"
